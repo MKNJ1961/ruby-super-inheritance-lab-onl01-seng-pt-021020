@@ -1,7 +1,6 @@
 class ChattyStudent < Student
 
-  def hello(string)
-    @string = string
+  def hello
     super
     puts "Hey there! I'm so excited to learn stuff. How are you doing today?
     I'm okay, but I'm kind of tired. Did you watch The Walking Dead last night?
@@ -9,7 +8,8 @@ class ChattyStudent < Student
   end
 
   def raise_hand
-    puts.times.10 'Pick me!'
+    super
+    10.times{super}
   end
 
 
